@@ -1,0 +1,29 @@
+body {
+  font-family: Helvetica;
+  background-color: #eaf6f6;
+}
+
+img {
+  border-radius: 50%;
+  height: 200px;
+}
+
+/*hr {
+    background-color: #eaf6f6;
+    border-top: 4px dotted #D3D3D3;
+    border-left: none;
+    width:2.5%
+}*/
+
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-width: 5px;
+  border-color: #d3d3d3;
+  height: 0px;
+  width: 5%;
+}
+
+h1, h3 {
+    color: #66bfbf;
+}
