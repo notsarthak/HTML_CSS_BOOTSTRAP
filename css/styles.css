@@ -1,5 +1,6 @@
 body{
-    margin:0px;
+    margin: 0px;
+    text-align: center;
 }
 
 h1{
@@ -12,26 +13,18 @@ h1{
     padding:15px;
 }*/
 
-.top-div{
+.top-container{
     background-color: #e4f9f5;
-    height:200px;
-    width:200px;
-    padding:20px;
-    border:10px solid;
 }
 
-.center-div{
+.middle-container{
     background-color:red;
-    margin-left:260px;
     height:200px;
     width:200px;
-    border:20px solid;
 }
 
-.bottom-div{
+.bottom-container{
     background-color: blue;
     width:200px;
     height:200px;
-    margin-left:500px;
-    border:10px solid;
 }
