@@ -4,6 +4,20 @@ body {
   font-family: "Merriweather";
 }
 
+.profile {
+  width: 40%;
+  margin: 50px auto;
+}
+
+hr {
+  border: 5px dotted #D0D0D0;
+  height: 3px;
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+  width: 3%;
+}
+
 h1 {
   font-size: 5.625rem;
   font-family: "Sacramento";
@@ -26,12 +40,6 @@ h3 {
 span {
   text-decoration: underline;
 }
-
-/*div{
-    background-color: #e4f9f5;
-    margin: 15px;
-    padding:15px;
-}*/
 
 .top-container {
   background-color: #e4f9f5;
@@ -91,4 +99,23 @@ a {
   float: right;
   margin-left: 30px;
   border-radius: 60%;
+}
+
+.btn {
+  padding: 10px;
+  background: linear-gradient(#66BFBF, #11999E);
+  color: white;
+  display: inline-block;
+  margin: 35px auto 70px;
+  border-radius: 5%;
+}
+
+.bottom-container {
+  background: #66bfbf;
+  padding: 50px;
+}
+
+.bottom-container p {
+  margin-bottom: 0px;
+  color: #EAF6F6;
 }
