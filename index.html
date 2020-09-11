@@ -4,7 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>TinDog</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+  <!--Google font stylesheet-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+  <!--Bootstrap and custom stylesheets-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
@@ -41,11 +44,11 @@
       <div class="row">
         <div class="col-lg-6">
           <h1>Meet new and interesting dogs nearby.</h1>
-          <button type="button">Download</button>
-          <button type="button">Download</button>
+          <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
+          <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
         </div>
         <div class="col-lg-6">
-          <img src="images/iphone6.png" alt="iphone-mockup">
+          <img class="title-image" src="images/iphone6.png" alt="iphone-mockup">
         </div>
       </div>
     </div>
@@ -147,7 +150,9 @@
     <p>© Copyright 2018 TinDog</p>
 
   </footer>
-
+  <!--Font awesome icons script-->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <!--Bootstrap scripts-->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
