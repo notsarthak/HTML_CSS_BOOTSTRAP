@@ -49,3 +49,28 @@ h1 {
     width: 60%;
     transform: rotate(25deg)
 }
+
+.col-lg-4 {
+    text-align: center;
+    padding: 0 5.5rem;
+}
+
+.icon {
+    color: #ef8172;
+    font-size: 3.5rem;
+    margin:4rem 0 1.25rem;
+}
+
+.icon:hover {
+    color: #ff4c68;
+}
+
+.feature-heading {
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.feature-description {
+    color: #8f8f8f;
+}
