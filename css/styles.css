@@ -6,6 +6,7 @@ body {
 #title {
     background-color: #ff4c68;
     color: #fff;
+    height: 55rem;
 }
 
 .container-fluid {
@@ -64,12 +65,15 @@ p {
 /*Title Image*/
 .title-image {
     width: 60%;
-    transform: rotate(25deg)
+    transform: rotate(25deg);
 }
 
 /*features section*/
 #features {
-    margin: 7% 15%;
+    padding: 7% 15%;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
 }
 
 .feature-box {
