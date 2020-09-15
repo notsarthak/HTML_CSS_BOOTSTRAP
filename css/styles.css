@@ -128,3 +128,23 @@ p {
 .pricing-column {
     padding: 3% 2%;
 }
+
+/*media query for when size of viewport (screen size on which website is being displayed) is less than or equal to that of a tablet*/
+@media screen and (max-width:1190px) {
+    #title {
+        text-align: center;
+    }
+    .title-image{
+        position: static;
+        transform: rotate(0deg);
+        width: 80%;
+        margin-left: 4rem
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .title-image{
+        width: 60%;
+        margin-left: auto;
+    }
+}
