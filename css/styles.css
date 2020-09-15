@@ -129,6 +129,39 @@ p {
     padding: 3% 2%;
 }
 
+/*Call to action*/
+#cta {
+    background-color: #ff4c68;
+    text-align: center;
+    padding: 5% 25%;
+    color: #fff;
+}
+#cta h3 {
+    font-size: 3rem;
+    margin: 0 auto 3rem;
+}
+
+#cta .btn {
+    margin: auto 1rem
+}
+
+/*footer*/
+#footer {
+    margin: 5% auto;
+    text-align: center;
+}
+
+#footer .icon {
+    margin: 1rem 0.5rem;
+    font-size: 1rem;
+    color: black
+}
+
+#footer p {
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+
 /*media query for when size of viewport (screen size on which website is being displayed) is less than or equal to that of a tablet*/
 @media screen and (max-width:1190px) {
     #title {
