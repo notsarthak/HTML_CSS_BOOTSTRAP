@@ -1,0 +1,601 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-CuOF+2SnTUfTwSZjCXf01h7uYhfOBuxIhGKPbfEJ3+FqH/s6cIFN9bGr1HmAg4fQ" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <section id="top-nav" class="fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Facebook</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <!--Left aligned content -->
+          <form class="d-flex mb-0 mt-2 mt-lg-0">
+            <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn search-btn btn-link shadow-none pl-0">
+              <svg width="1.1em" height="1.1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
+                <path fill-rule="evenodd"
+                  d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+              </svg>
+            </button>
+          </form>
+          <!--Left aligned content-->
+
+          <!--Center aligned content-->
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link position-relative" aria-current="page" href="#">
+                <svg width="1.1em" height="1.1em" viewBox="0 0 16 16" class="bi bi-house-fill" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                  <path fill-rule="evenodd"
+                    d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                </svg>
+                <span
+                  class="position-absolute top-25 left-75 translate-middle badge border border-light rounded-circle bg-danger small-badge">1</span>
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="#">
+                <svg width="1.1em" height="1.1em" viewBox="0 0 16 16" class="bi bi-flag-fill" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001" />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <svg width="1.1em" height="1.1em" viewBox="0 0 16 16" class="bi bi-camera-video-fill"
+                  fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5z" />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <svg width="1.1em" height="1.1em" viewBox="0 0 16 16" class="bi bi-bag-dash-fill" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M5.5 3.5a2.5 2.5 0 0 1 5 0V4h-5v-.5zm6 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zM6 9.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1H6z" />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative" href="#">
+                <svg width="1.1em" height="1.1em" viewBox="0 0 16 16" class="bi bi-people-fill" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+                </svg>
+                <span
+                  class="position-absolute top-25 left-75 translate-middle badge border border-light rounded-circle bg-danger small-badge">2</span>
+              </a>
+            </li>
+          </ul>
+          <!--Center aligned content-->
+
+          <!--Right aligned content-->
+          <ul class="navbar-nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link d-inline-flex align-items-center" href="#">
+                <div class="nav-dp img-container rounded-circle mr-1 d-inline-block">
+                  <img src="img/jose-martinez-Vt5inZuqFvg-unsplash.jpg" class="h-100 w-auto">
+                </div>
+                <span>Anna</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">
+                <svg width="1.1em" height="1.1em" viewBox="0 0 16 16" class="bi bi-plus-circle-fill" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative" href="#" id="chats" role="button" data-toggle="dropdown"
+                aria-expanded="false">
+                <svg width="1.1em" height="1.1em" viewBox="0 0 16 16" class="bi bi-chat-fill" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z" />
+                </svg>
+                <span
+                  class="position-absolute top-25 left-75 translate-middle badge border border-light rounded-circle bg-danger small-badge">6</span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="chats">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative" href="#" id="notification" role="button" data-toggle="dropdown"
+                aria-expanded="false">
+                <svg width="1.1em" height="1.1em" viewBox="0 0 16 16" class="bi bi-bell-fill" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+                </svg>
+                <span
+                  class="position-absolute top-25 left-75 translate-middle badge border border-light rounded-circle bg-danger small-badge">12</span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="notification">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-expanded="false">
+                <svg width="1.1em" height="1.1em" viewBox="0 0 16 16" class="bi bi-caret-down-square-fill"
+                  fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4 4a.5.5 0 0 0-.374.832l4 4.5a.5.5 0 0 0 .748 0l4-4.5A.5.5 0 0 0 12 6H4z" />
+                </svg>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!--Left aligned content-->
+        </div>
+      </div>
+    </nav>
+  </section>
+  <section id="header" class="shadow-lg bg-light">
+    <div class="personalised-container mx-auto">
+      <div class="position-relative">
+        <div class="img-container cover-img rounded-bottom shadow">
+          <img src="img/photo-1593642634524-b40b5baae6bb.jfif" class="img-fluid">
+        </div>
+        <div class="position-absolute translate-middle left-50 dp-section">
+          <div class="img-container actual-dp shadow-lg">
+            <img src="img/jose-martinez-Vt5inZuqFvg-unsplash.jpg" class="h-100 w-auto">
+          </div>
+        </div>
+      </div>
+      <h3 class="text-center mt-4 pt-3 username">Anna Doe</h3>
+      <p class="text-center mx-auto m-2 mb-3 userstatus">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Harum
+        veniam, asperiores quidem quasi quis ab quaerat ducimus a blanditiis?</p>
+      <hr>
+      <div class="row">
+        <div class="col-md-7 text-center text-lg-left mb-3 mb-xl-0">
+          <button class="active-tab-button rounded">POSTS</button>
+          <button class="tab-button">ABOUT</button>
+          <button class="tab-button">FRIENDS<span class="badge text-secondary">1734</span></button>
+          <button class="tab-button">PHOTOS</button>
+          <button class="tab-button dropdown-toggle" id="more-about-user" data-toggle="dropdown"
+            aria-expanded="false">MORE</button>
+          <ul class="dropdown-menu" aria-labelledby="more-about-user">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <div class="col-md-5 text-center text-lg-right">
+          <button class="user-option-button shadow">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil-square" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+              <path fill-rule="evenodd"
+                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+            </svg> EDIT PROFILE</button>
+          <button class="user-option-button user-option-button-icon shadow">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eye-fill" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+              <path fill-rule="evenodd"
+                d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+            </svg></button>
+          <button class="user-option-button user-option-button-icon shadow">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
+              <path fill-rule="evenodd"
+                d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+            </svg></button>
+          <button class="user-option-button user-option-button-icon shadow">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+            </svg></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="main">
+    <div class="personalised-container mx-auto">
+      <div class="row mt-3">
+        <div class="col-lg-5 px-3">
+          <div class="row g-3">
+            <!--INRO SECTION-->
+            <div class="col-12 bg-light shadow p-3 rounded">
+              <h5 class="main-heading mb-4">Intro</h5>
+              <div class="row">
+                <div class="col-1 pt-1 intro-text">
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-briefcase-fill" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z" />
+                    <path fill-rule="evenodd"
+                      d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5v1.384l-7.614 2.03a1.5 1.5 0 0 1-.772 0L0 5.884V4.5zm5-2A1.5 1.5 0 0 1 6.5 1h3A1.5 1.5 0 0 1 11 2.5V3h-1v-.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5V3H5v-.5z" />
+                  </svg>
+                </div>
+                <div class="col-11 intro-text">
+                  <p>Co-founder at <span class="fw-bold">Microsoft</span></p>
+                </div>
+                <div class="col-1 pt-1 intro-text">
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bookmark-check-fill"
+                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm6.854 5.854a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                  </svg>
+                </div>
+                <div class="col-11 intro-text">
+                  <p>Studied at <span class="fw-bold">Harvard University</span></p>
+                </div>
+                <div class="col-1 pt-1 intro-text">
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-door-fill" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z" />
+                    <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                  </svg>
+                </div>
+                <div class="col-11 intro-text">
+                  <p>Lives in <span class="fw-bold">California, USA</span></p>
+                </div>
+                <div class="col-1 pt-1 intro-text">
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-rss-fill" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm1.5 2.5a1 1 0 0 0 0 2 8 8 0 0 1 8 8 1 1 0 1 0 2 0c0-5.523-4.477-10-10-10zm0 4a1 1 0 0 0 0 2 4 4 0 0 1 4 4 1 1 0 1 0 2 0 6 6 0 0 0-6-6zm.5 7a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                  </svg>
+                </div>
+                <div class="col-11 intro-text">
+                  <p>Followed by <span class="fw-bold">9254 people</span></p>
+                </div>
+                <div class="col-1 pt-1 intro-text">
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-globe2" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539a8.372 8.372 0 0 1-1.198-.49 7.01 7.01 0 0 1 2.276-1.52 6.7 6.7 0 0 0-.597.932 8.854 8.854 0 0 0-.48 1.079zM3.509 7.5H1.017A6.964 6.964 0 0 1 2.38 3.825c.47.258.995.482 1.565.667A13.4 13.4 0 0 0 3.508 7.5zm1.4-2.741c.808.187 1.681.301 2.591.332V7.5H4.51c.035-.987.176-1.914.399-2.741zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5H7.5v2.409c-.91.03-1.783.145-2.591.332a12.343 12.343 0 0 1-.4-2.741zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696A12.63 12.63 0 0 1 7.5 11.91v3.014c-.67-.204-1.335-.82-1.887-1.855a7.776 7.776 0 0 1-.395-.872zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964a9.083 9.083 0 0 0-1.565.667A6.963 6.963 0 0 1 1.018 8.5h2.49a13.36 13.36 0 0 0 .437 3.008zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909c.81.03 1.577.13 2.282.287-.12.312-.252.604-.395.872-.552 1.035-1.218 1.65-1.887 1.855V11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5h-2.49a13.361 13.361 0 0 0-.437-3.008 9.123 9.123 0 0 0 1.565-.667A6.963 6.963 0 0 1 14.982 7.5zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343c-.705.157-1.473.257-2.282.287V1.077c.67.204 1.335.82 1.887 1.855.143.268.276.56.395.872z" />
+                  </svg>
+                </div>
+                <div class="col-11 intro-text">
+                  <p><span class="fw-bold">microsoft.com</span></p>
+                </div>
+              </div>
+              <button class="intro-button shadow">EDIT DETAILS</button>
+              <button class="intro-button shadow">ADD HOBBIES</button>
+              <div class="row mt-3 justify-content-center">
+                <div class="col-4 shadow img-container gallery-img rounded m-1">
+                  <img src="img/pierce-gainey-DzPsZztt4R4-unsplash.jpg" class="img-fluid">
+                </div>
+                <div class="col-4 shadow img-container gallery-img rounded m-1">
+                  <img src="img/tamas-tuzes-katai-MqRSdbBOUCU-unsplash.jpg" class="img-fluid">
+                </div>
+                <div class="col-4 shadow img-container gallery-img rounded m-1">
+                  <img src="img/edward-howell-VIi1rsNpk1E-unsplash.jpg" class="img-fluid">
+                </div>
+                <div class="col-4 shadow img-container gallery-img rounded m-1">
+                  <img src="img/grace-o-driscoll-cYMAb6eHQko-unsplash.jpg" class="img-fluid">
+                </div>
+                <div class="col-4 shadow img-container gallery-img rounded m-1">
+                  <img src="img/helen-ngoc-n-ioz73g0VDiY-unsplash.jpg" class="img-fluid">
+                </div>
+                <div class="col-4 shadow img-container gallery-img rounded m-1">
+                  <img src="img/miltiadis-fragkidis-9plWM7xXApw-unsplash.jpg" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <!--Intro Section-->
+            <!--Photos-->
+            <div class="col-12 bg-light shadow rounded p-3">
+              <div class="row">
+                <div class="col-6">
+                  <h5 class="main-heading mb-4">Photos</h5>
+                </div>
+                <div class="col-6 text-right">
+                  <a class="main-link" href="">SEE ALL PHOTOS</a>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-4 shadow img-container gallery-img rounded m-1">
+                  <img src="img/city-of-gold-coast-HoB3IMAZN30-unsplash.jpg" class="img-fluid">
+                </div>
+                <div class="col-4 shadow img-container gallery-img rounded m-1">
+                  <img src="img/eugenivy_now-KryC6MHyIoU-unsplash.jpg" class="img-fluid">
+                </div>
+                <div class="col-4 shadow img-container gallery-img rounded m-1">
+                  <img src="img/fotis-fotopoulos-VN_KbN7nqjQ-unsplash.jpg" class="img-fluid">
+                </div>
+                <div class="col-4 shadow img-container gallery-img rounded m-1">
+                  <img src="img/kristaps-ungurs-zmF40xZpyrs-unsplash.jpg" class="img-fluid">
+                </div>
+                <div class="col-4 shadow img-container gallery-img rounded m-1">
+                  <img src="img/norbert-buduczki-W2e4_vGGusU-unsplash.jpg" class="img-fluid">
+                </div>
+                <div class="col-4 shadow img-container gallery-img rounded m-1">
+                  <img src="img/set-sj-DoSPxDAmD8g-unsplash.jpg" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <!--Photos-->
+            <!--Friends-->
+            <div class="col-12 bg-light shadow rounded p-3 pb-0">
+              <div class="row">
+                <div class="col-6">
+                  <h5 class="main-heading mb-4">Friends <span class="fw-light fs-6">1734</span></h5>
+                </div>
+                <div class="col-6 text-right">
+                  <a class="main-link" href="">SEE ALL FRIENDS</a>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-4 friends-sec-width m-1 p-0">
+                  <div class="shadow rounded img-container gallery-img w-100">
+                    <img class="img-fluid" src="img/people/benigno-hoyuela-WeNhQostmiY-unsplash.jpg">
+                  </div>
+                  <p class="friend-name mt-1 text-center">Noah Clayton</p>
+                </div>
+                <div class="col-4 friends-sec-width m-1 p-0">
+                  <div class="shadow rounded img-container gallery-img w-100">
+                    <img class="img-fluid" src="img/people/larry-moore-4J3YhGjCr-g-unsplash.jpg">
+                  </div>
+                  <p class="friend-name mt-1 text-center">Eoin Rankin</p>
+                </div>
+                <div class="col-4 friends-sec-width m-1 p-0">
+                  <div class="shadow rounded img-container gallery-img w-100">
+                    <img class="img-fluid" src="img/people/nadia-sitova-RqPT0HZW8T4-unsplash.jpg">
+                  </div>
+                  <p class="friend-name mt-1 text-center">Janelle Donaldson</p>
+                </div>
+                <div class="col-4 friends-sec-width m-1 p-0">
+                  <div class="shadow rounded img-container gallery-img w-100">
+                    <img class="img-fluid" src="img/people/benigno-hoyuela-72zsd_fnxYc-unsplash.jpg">
+                  </div>
+                  <p class="friend-name mt-1 text-center">Maggie Martins</p>
+                </div>
+                <div class="col-4 friends-sec-width m-1 p-0">
+                  <div class="shadow rounded img-container gallery-img w-100">
+                    <img class="img-fluid" src="img/people/engin-akyurt-Cf7duIEgvYw-unsplash.jpg">
+                  </div>
+                  <p class="friend-name mt-1 text-center">Deborah Berry</p>
+                </div>
+                <div class="col-4 friends-sec-width m-1 p-0">
+                  <div class="shadow rounded img-container gallery-img w-100">
+                    <img class="img-fluid" src="img/people/gemma-chua-tran-C3LK3DnDtv4-unsplash.jpg">
+                  </div>
+                  <p class="friend-name mt-1 text-center">Nellie Bright</p>
+                </div>
+              </div>
+            </div>
+            <!--Friends-->
+          </div>
+        </div>
+        <div class="col-lg-7 mt-3 mt-lg-0 px-3">
+          <div class="row g-3">
+            <!--Update Status-->
+            <div class="col-12 bg-light shadow rounded p-3">
+              <div class="row">
+                <div class="col-1">
+                  <div class="img-container user-pic">
+                    <img class="h-100 w-auto" src="img/jose-martinez-Vt5inZuqFvg-unsplash.jpg">
+                  </div>
+                </div>
+                <div class="col-11 img-content-pd">
+                  <button class="update-status-btn shadow rounded-pill">WHAT'S ON YOUR MIND?</button>
+                </div>
+              </div>
+              <hr class="mt-4">
+              <div class="row justify-content-center">
+                <div class="col-4 text-center">
+                  <button class="btn btn-link main-link smaller-text">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-camera-video-fill"
+                      fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd"
+                        d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5z" />
+                    </svg> LIVE
+                  </button>
+                </div>
+                <div class="col-4 text-center">
+                  <button class="btn btn-link main-link smaller-text">
+                    <svg width="1.0625em" height="1em" viewBox="0 0 17 16" class="bi bi-image-fill" fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd"
+                        d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2V3zm1 9l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094L15.002 9.5V13a1 1 0 0 1-1 1h-12a1 1 0 0 1-1-1v-1zm5-6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                    </svg> PHOTO/VIDEO
+                  </button>
+                </div>
+                <div class="col-4 text-center">
+                  <button class="btn btn-link main-link smaller-text">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-emoji-smile-fill" fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd"
+                        d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zM4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM10 8c.552 0 1-.672 1-1.5S10.552 5 10 5s-1 .672-1 1.5S9.448 8 10 8z" />
+                    </svg> MOOD
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!--Update Status-->
+            <!--Post Section-->
+            <div class="col-12 bg-light shadow rounded p-3">
+              <div class="row">
+                <div class="col-1">
+                  <div class="img-container user-pic">
+                    <img src="img/jose-martinez-Vt5inZuqFvg-unsplash.jpg" class="h-100 w-auto">
+                  </div>
+                </div>
+                <div class="col-11 img-content-pd">
+                  <h6 class="pb-0 mb-0 name">Anna Doe</h6>
+                  <p class="mt-0 pt-0 text-muted time">10h</p>
+                </div>
+              </div>
+              <p class="post-text mt-2">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus iure ratione consectetur ipsam
+                debitis ipsum laborum itaque quaerat illum, delectus, voluptatem eaque sapiente accusantium non, nam ut?
+                Quisquam, quod reiciendis.
+              </p>
+              <img class="img-fluid mt-2 mb-3 post-img" src="img/pexels-olenka-sergienko-5686476.jpg">
+              <div class="row">
+                <div class="col-6">
+                  <i class="fas fa-thumbs-up text-primary"></i>
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="#f05454"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                  </svg>
+                  <span class="post-text text-primary">124</span>
+                </div>
+                <div class="col-6 text-right post-text">
+                  8 comments
+                </div>
+              </div>
+              <hr class="mb-2">
+              <div class="row justify-content-center">
+                <div class="col-4 text-center">
+                  <button class="btn btn-link main-link smaller-text">
+                    <i class="fas fa-thumbs-up"></i>
+                    LIKE
+                  </button>
+                </div>
+                <div class="col-4 text-center">
+                  <button class="btn btn-link main-link smaller-text">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-square-fill" fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd"
+                        d="M2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                    </svg> COMMENT
+                  </button>
+                </div>
+                <div class="col-4 text-center">
+                  <button class="btn btn-link main-link smaller-text">
+                    <i class="fas fa-share"></i> SHARE
+                  </button>
+                </div>
+              </div>
+              <hr class="mt-2 mb-4">
+              <div class="row g-2">
+                <div class="col-1">
+                  <div class="img-container user-pic">
+                    <img src="img/jose-martinez-Vt5inZuqFvg-unsplash.jpg" class="h-100 w-auto">
+                  </div>
+                </div>
+                <div class="col-11 mb-2 img-content-pd">
+                  <textarea class="form-control" rows="2" placeholder="Write a comment"></textarea>
+                </div>
+                <div class="col-1">
+                  <div class="img-container user-pic">
+                    <img src="img/people/brooke-cagle-wKOKidNT14w-unsplash.jpg" class="h-100 w-auto">
+                  </div>
+                </div>
+                <div class="col-11 img-content-pd">
+                  <div class="comment d-inline-block rounded">
+                    <h6 class="name">Malcolm Dosh</h6>
+                    <p class="comment-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptatum
+                      eaque non autem accusantium perspiciatis corrupti veniam, rem exercitationem, quasi laudantium
+                      error tenetur corporis nam voluptatem? Tempora facere impedit est.</p>
+                  </div>
+                  <div>
+                    <button
+                      class="btn btn-link btn-sm text-secondary text-decoration-none comment-react-button shadow-none">Like</button>
+                    <button
+                      class="btn btn-link btn-sm text-secondary text-decoration-none comment-react-button shadow-none">Reply</button>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="img-container user-pic">
+                    <img src="img/people/noemi-macavei-katocz-or6mrFMVmHM-unsplash.jpg" class="h-100 w-auto">
+                  </div>
+                </div>
+                <div class="col-11 img-content-pd">
+                  <div class="comment d-inline-block rounded">
+                    <h6 class="name">Rhia Wallis</h6>
+                    <p class="comment-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
+                  <div>
+                    <button
+                      class="btn btn-link btn-sm text-secondary text-decoration-none comment-react-button shadow-none">Like</button>
+                    <button
+                      class="btn btn-link btn-sm text-secondary text-decoration-none comment-react-button shadow-none">Reply</button>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="img-container user-pic">
+                    <img src="img/people/omar-lopez-0-uzdU3gUYw-unsplash.jpg" class="h-100 w-auto">
+                  </div>
+                </div>
+                <div class="col-11 img-content-pd">
+                  <div class="comment d-inline-block rounded">
+                    <h6 class="name">Marcie Mcgee</h6>
+                    <p class="comment-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+                      doloribus. Perspiciatis, suscipit, nisi dolores repellat debitis magnam consectetur unde delectus
+                      eligendi voluptatibus illum ex neque eaque officiis accusamus quis maiores! Lorem ipsum dolor, sit
+                      amet consectetur adipisicing elit. Nemo quae, veniam neque sit eveniet fugiat adipisci debitis
+                      vero.</p>
+                  </div>
+                  <div>
+                    <button
+                      class="btn btn-link btn-sm text-secondary text-decoration-none comment-react-button shadow-none">Like</button>
+                    <button
+                      class="btn btn-link btn-sm text-secondary text-decoration-none comment-react-button shadow-none">Reply</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Post Section-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
